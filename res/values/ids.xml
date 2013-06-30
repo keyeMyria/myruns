@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="editDispActivityType">false</item>
+    <item type="id" name="editDispDateTime">false</item>
+    <item type="id" name="editDispDuration">false</item>
+    <item type="id" name="editDispDistance">false</item>
+    <item type="id" name="editDispCalories">false</item>
+    <item type="id" name="editDispHeartrate">false</item>
+    <item type="id" name="editDispComment">false</item>
+    <item type="id" name="btnSave">false</item>
+    <item type="id" name="btnCancel">false</item>
+    <item type="id" name="root">false</item>
+    <item type="id" name="map">false</item>
+    <item type="id" name="type_stats">false</item>
+    <item type="id" name="avespeed_stats">false</item>
+    <item type="id" name="curspeed_stats">false</item>
+    <item type="id" name="climb_stats">false</item>
+    <item type="id" name="calories_stats">false</item>
+    <item type="id" name="distance_stats">false</item>
+    <item type="id" name="imageProfile">false</item>
+    <item type="id" name="btnChangePhoto">false</item>
+    <item type="id" name="editName">false</item>
+    <item type="id" name="editEmail">false</item>
+    <item type="id" name="editPhone">false</item>
+    <item type="id" name="radioGender">false</item>
+    <item type="id" name="radioGenderF">false</item>
+    <item type="id" name="radioGenderM">false</item>
+    <item type="id" name="editClass">false</item>
+    <item type="id" name="editMajor">false</item>
+    <item type="id" name="spinnerInputType">false</item>
+    <item type="id" name="spinnerActivityType">false</item>
+    <item type="id" name="btnStart">false</item>
+</resources>

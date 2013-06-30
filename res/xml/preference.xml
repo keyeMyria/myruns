@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+// Code examples can be found here:
+// 
+// http://developer.android.com/reference/android/preference/PreferenceFragment.html
+// http://developer.android.com/reference/android/preference/PreferenceActivity.html
+-->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/ui_settings_category_account_title" >
+        <PreferenceScreen
+            android:summary="@string/ui_settings_profile_summary"
+            android:title="@string/ui_settings_profile_title" >
+            <intent android:action="aaditya.myruns5.PROFILEACTIVITY" />
+        </PreferenceScreen>
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="@string/preference_key_privacy_key"
+            android:summary="@string/ui_settings_privacy_summary"
+            android:title="@string/ui_settings_privacy_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/ui_settings_category_additional_title" >
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/unit_display_name"
+            android:entryValues="@array/unit_display_value"
+            android:key="@string/preference_key_unit_display"
+            android:summary="@string/ui_settings_unit_display_summary"
+            android:title="@string/ui_settings_unit_display_title" />
+
+        <EditTextPreference
+            android:name="@string/ui_settings_comment_name"
+            android:summary="@string/ui_settings_comment_summary"
+            android:title="@string/ui_settings_comment_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/ui_settings_category_misc_title" >
+        <PreferenceScreen
+            android:summary="@string/homepage_url"
+            android:title="@string/ui_settings_homepage_title" >
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/homepage_url" />
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

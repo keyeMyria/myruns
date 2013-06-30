@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/ui_profile_photo_title" />
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+            <ImageView android:id="@+id/image" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="100.0dip" android:layout_margin="5.0dip" android:layout_weight="1.0" android:contentDescription="@string/ui_profile_photo_content_description">
+                <requestFocus />
+            </ImageView>
+            <Button android:layout_gravity="center" android:id="@+id/btnChangePhoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/ui_button_change_title" android:onClick="onChangePhotoClicked" />
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/ui_profile_name_title" />    	
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/ui_profile_name_hint"
+        android:singleLine="true"
+        android:inputType="textPersonName" >
+		
+        <requestFocus />
+    </EditText>
+	
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/ui_profile_email_title" />
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="@string/ui_profile_email_hint" 
+        android:inputType="textEmailAddress" />
+	
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/ui_profile_phone_title" />
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="@string/ui_profile_phone_hint" 
+        android:inputType="phone" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/ui_profile_gender_title" />
+		<RadioGroup android:orientation="horizontal" android:id="@+id/radioGender" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <RadioButton android:id="@+id/radioGenderF" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_profile_gender_female" android:layout_weight="1.0" />
+            <RadioButton android:id="@+id/radioGenderM" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ui_profile_gender_male" android:layout_weight="1.0" />
+        </RadioGroup>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/ui_profile_class_title" />
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        />
+    	
+	
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5.0dip" android:text="@string/ui_profile_major_title" />
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:ems="10"
+        android:singleLine="true"
+        android:hint="@string/ui_profile_major_hint" />
+
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+            <Button android:id="@+id/btnSave" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="@string/ui_button_save_title" android:layout_weight="1.0" android:onClick="onSaveClicked" />
+            <Button android:id="@+id/btnCancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="40.0dip" android:text="@string/ui_button_cancel_title" android:layout_weight="1.0" android:onClick="onCancelClicked" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
