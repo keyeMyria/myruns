@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">MyRuns5</string>
+    <string name="app_name">MyRuns</string>
 
     <!-- Change this to whatever the course website will be -->
     <string name="homepage_url">http://www.cs.dartmouth.edu/~campbell/cs65/cs65.html</string>
